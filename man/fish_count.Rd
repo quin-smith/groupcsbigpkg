@@ -2,7 +2,7 @@
 % Please edit documentation in R/fish_count.R
 \name{fish_count}
 \alias{fish_count}
-\title{Title}
+\title{fish_count}
 \usage{
 fish_count(fish, hist.plot = FALSE)
 }
@@ -10,8 +10,8 @@ fish_count(fish, hist.plot = FALSE)
 \item{hist.plot}{}
 }
 \value{
-
+Output will be a list.  If hist.plot = TRUE, will return a histogram
 }
 \description{
-Title
+Returns a list of the most fish caught, rarest fish caught, and total fish caught.  If hist.plot = TRUE, returns a histogram of fish counts.
 }

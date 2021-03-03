@@ -1,9 +1,10 @@
-#' fish_count
+#' @title fish_count
 #'
 #' @param fish
 #' @param hist.plot
 #'
-#' @return
+#' @description Returns a list of the most fish caught, rarest fish caught, and total fish caught.  If hist.plot = TRUE, returns a histogram of fish counts.
+#' @return Output will be a list.  If hist.plot = TRUE, will return a histogram
 #' @export
 #'
 #' @examples
