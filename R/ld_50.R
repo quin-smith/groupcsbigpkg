@@ -10,6 +10,7 @@
 #' @export
 #'
 #' @examples
+#' ld_50(170)
 ld_50 <- function(lb_bodywt, cups = 0, mg_caf = 95, caf_lvl = 0) {
 
   #error testing

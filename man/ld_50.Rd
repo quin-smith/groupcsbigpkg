@@ -15,3 +15,6 @@ Output is a numeric.
 \description{
 Returns the amount of cups of coffee it would take to reach a lethal dose of caffeine overdose given input weight in lbs.  Based on the LD 50 of caffeine (150 mg/kg body weight).
 }
+\examples{
+ld_50(170)
+}
