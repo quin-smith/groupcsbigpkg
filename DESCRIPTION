@@ -1,12 +1,14 @@
 Package: groupcsbigpkg
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Packages made by Group 4C members.
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Gabriel De La Rosa, Quin Smith, Ruoyu Wang
+Maintainer: Gabriel De La Rosa <gdelarosa@ucsb.edu>, Quin Smith <quinlan_smith@ucsb.edu>, Ruoyu Wang <r_wang@ucsb.edu>
+Description: Functions in this package includes fish vector classification and counting in 'fish_count()';
+             the amount of cups of coffee to reach a lethal dose of caffeine overdose in 'ld_50()';
+             the years for a population to reach the carrying capacity in 'years_to_K()';
+             the estimate of highest possible speed to stop a car in certain distance in 'safe_speed()'.
+License: ESM 262
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
