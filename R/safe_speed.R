@@ -10,7 +10,8 @@
 #' @param d The technical braking distance to be calculate in the loop, the initial default is 0. (m)
 #'
 #' @return The highest speed estimate until the target braking distance is reached. Numeric.
-
+#' @example
+#' safe_speed(0, 0.5, 100)
 
 
 safe_speed <- function(v, mu, safe_distance,
