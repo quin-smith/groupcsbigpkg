@@ -11,4 +11,4 @@
 #' @keywords datasets
 #' @name fish_catch
 #' @usage data(fish_catch)
-"data/fish_catch.rda"
+"fish_catch"
