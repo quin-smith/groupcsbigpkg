@@ -1,0 +1,45 @@
+---
+title: "Safe Speed Usage Examples"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Safe Speed Usage Examples}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### 1. The application of safe speed function
+```{r example-of-sv}
+# call the safe speed function
+source(here::here("R", "safe_speed.R"))
+
+# Suppose the friction coefficient for one road is 0.6
+mu = 0.6
+
+# we set the initial test speed as 1 m/s
+speed = 1
+
+# set the safe distance to be 100 m
+distance = 100
+
+# use the function to estimate the upper limit of speed for a 100 m braking distance
+speed_eg <- safe_speed(v = speed, mu = mu, safe_distance = distance)
+
+# check if the answer is correct
+braking_distance = speed_eg^2 / (2 * mu * 9.8)
+# the braking distance is 100. 63 m
+# therefore, the speed cannot exceed 34.4 m/s to have a safe braking distance
+```
+
+```{r sv-error-checking}
+speed2 = -5
+distance2 = -3
+
+# Not only show the warning but also stop the functions!
+# speed_er1 <- safe_speed(v = speed2, mu = mu, safe_distance = distance)
+
+# speed_er2 <- safe_speed(v = speed, mu = mu, safe_distance = distance2)
+```

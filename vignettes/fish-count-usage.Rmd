@@ -1,0 +1,43 @@
+---
+title: "Fish Count Function with Example Data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Fish Count Function with Example Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### 1. read the fish data
+```{r}
+# I cannot load the example dataset "fish_catch.rda"
+fish <- read.table("../fish.txt")
+# pull out the vector
+fish_test <- fish$V1
+
+# call our function
+source(here::here("R","fish_count.R"))
+```
+
+### 2. test the function
+
+#### a) with a plot
+```{r}
+fish_count(fish = fish_test, hist.plot = TRUE)
+```
+
+#### b) default, no plot
+```{r}
+fish_count(fish = fish_test)
+```
+
+#### c) error checking
+
+```{r}
+# fish_count(fish = as.list(fish_test))
+# fish_count(fish = c(1:10))
+```
+
