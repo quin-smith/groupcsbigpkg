@@ -20,6 +20,8 @@ safe_speed <- function(v, mu, safe_distance,
   v = if(v < 0) {stop("Speed cannot be less than zero!")}
   else {v}
 
+  mu = if(mu <= 0) {stop("Zero or negative friction coefficients are impossible!")}
+  else {mu}
 
   safe_distance = ifelse(safe_distance < 0,
                          stop("Target Distance cannot be less than zero!"),
